@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GC Hair Salon – Book Your Appointment</title>
+<meta name="description" content="Book your hairstyle or beauty service at GC Hair Salon. Choose your services and send your booking request on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="book.css">
+</head>
+<body>
+<header class="nav"><div class="nav-in"><a class="brand" href="home.html">GC Hair Salon</a><button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button><nav id="menu" aria-label="Main"><a href="home.html">Home</a><a href="services-prices.html">Services &amp; Prices</a><a href="book.html" class="active" aria-current="page">Book Now</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact Us</a></nav></div></header>
+<main>
+
+<section class="banner bk"><div class="wrap"><h1>Book Your Appointment</h1><p class="sub-h">Ready for a beautiful new look?</p>
+<p>At GC Hair Salon, we make booking your favourite hairstyle or beauty service easy and convenient. Simply complete the booking form, choose your preferred services and send your appointment request directly to us through WhatsApp.</p>
+<p class="tag">Look Good. Feel Good. Be Good.</p><p>WhatsApp Bookings: <a href="https://wa.me/27721810706" target="_blank" rel="noopener">072 181 0706</a></p></div></section>
+
+<section class="wrap"><div class="card"><h2>Let’s Book Your Appointment!</h2>
+<p>Please provide your details and select the services you would like to book. Once completed, you will be redirected to WhatsApp to send your booking request.</p>
+<form id="bf" novalidate>
+<fieldset><legend>Part A: Customer Information</legend>
+<label class="f" for="name">Full Name</label><input id="name" type="text" placeholder="Enter your full name" autocomplete="name" required><div class="err" id="e-name"></div>
+<label class="f" for="phone">Phone Number</label><input id="phone" type="tel" placeholder="Enter your WhatsApp/contact number" autocomplete="tel" required><div class="err" id="e-phone"></div></fieldset>
+<fieldset><legend>Part B: Your Preferred Appointment</legend><p class="c">When would you like to visit us?</p>
+<div class="row2"><div><label class="f" for="date">Preferred Date</label><input id="date" type="date" required><div class="err" id="e-date"></div></div>
+<div><label class="f" for="time">Preferred Time</label><input id="time" type="time" min="08:30" max="19:00" step="900" required><div class="err" id="e-time"></div></div></div>
+<div class="err" id="dmsg"></div>
+<div class="hrs"><strong>Operating hours</strong><table class="hours"><tr><td>Monday – Friday</td><td>08:30 – 19:00 or until late</td></tr><tr><td>Saturday</td><td>08:30 – 17:00 or until late</td></tr><tr><td>Sunday</td><td>Closed</td></tr></table></div>
+<p class="c small">Your preferred appointment time will be confirmed by GC Hair Salon through WhatsApp.</p></fieldset>
+<fieldset><legend>Part C: Select Your Services</legend><div class="err" id="e-svc"></div>
+<div id="knotless"><h3>KNOTLESS BRAIDS</h3><p class="c">Select your preferred knotless braiding style.</p><label class="opt"><input type="checkbox" name="svc" value="Knotless Braids – Small" data-price="400" data-id="knotless-small"><span>Small</span><b>R400</b></label><label class="opt"><input type="checkbox" name="svc" value="Knotless Braids – Medium" data-price="300" data-id="knotless-medium"><span>Medium</span><b>R300</b></label><label class="opt"><input type="checkbox" name="svc" value="Knotless Braids – Jumbo" data-price="200" data-id="knotless-jumbo"><span>Jumbo</span><b>R200</b></label><label class="opt"><input type="checkbox" name="svc" value="Knotless Braids – Short" data-price="200" data-id="knotless-short"><span>Short</span><b>R200</b></label></div>
+<div id="tribal"><h3>TRIBAL BRAIDS</h3><p class="c">Choose your preferred tribal hairstyle.</p><label class="opt"><input type="checkbox" name="svc" value="Tribal Braids – Fulani" data-price="300" data-id="tribal-fulani"><span>Fulani</span><b>R300</b></label><label class="opt"><input type="checkbox" name="svc" value="Tribal Braids – Goddess" data-price="300" data-id="tribal-goddess"><span>Goddess</span><b>R300</b></label><label class="opt"><input type="checkbox" name="svc" value="Tribal Braids – Straight Up" data-price="200" data-id="tribal-straight-up"><span>Straight Up</span><b>R200</b></label><label class="opt"><input type="checkbox" name="svc" value="Tribal Braids – Straight Back" data-price="150" data-id="tribal-straight-back"><span>Straight Back</span><b>R150</b></label></div>
+<div id="other"><h3>OTHER SERVICES</h3><p class="c">Select any additional beauty services you would like.</p><label class="opt"><input type="checkbox" name="svc" value="Lashes" data-price="70" data-id="lashes"><span>Lashes</span><b>R70</b></label><label class="opt"><input type="checkbox" name="svc" value="Hair Wash" data-price="50" data-id="hair-wash"><span>Hair Wash</span><b>R50</b></label><label class="opt"><input type="checkbox" name="svc" value="Wig Wash" data-price="100" data-id="wig-wash"><span>Wig Wash</span><b>R100</b></label><label class="opt"><input type="checkbox" name="svc" value="Hair Treatment" data-price="100" data-id="hair-treatment"><span>Hair Treatment</span><b>R100</b></label></div></fieldset>
+<fieldset><legend>Part D: Anything Else We Should Know?</legend><p class="c">Have a special request or additional information about your appointment? Let us know below.</p>
+<label class="f" for="notes">Additional Notes (optional)</label><textarea id="notes" rows="4" placeholder="Enter any additional information or special requests about your appointment..."></textarea></fieldset>
+</form></div></section>
+
+<section class="wrap"><div class="card"><h2>Your Booking Summary</h2><div id="sum" class="sumbox" aria-live="polite"></div>
+<h3>Ready to Book?</h3><p>Your appointment request is almost complete! Click below to send your selected services and appointment details directly to GC Hair Salon through WhatsApp.</p>
+<div class="btns"><button class="btn wa" id="send" type="button">Send Booking via WhatsApp</button></div><p class="lead">072 181 0706</p></div></section>
+
+<section class="wrap"><div class="card"><h2>Before You Book</h2><p>Please take note of the following:</p>
+<ul class="notice"><li>All appointments are subject to confirmation.</li><li>Select your preferred appointment date and time.</li><li>Please check your selected services before submitting.</li><li>Services without advertised prices will be discussed through WhatsApp.</li><li>GC Hair Salon will respond to confirm your appointment.</li><li>Sunday bookings are unavailable according to the advertised operating hours.</li></ul></div></section>
+
+<section class="wrap"><div class="card"><h2>Need Assistance With Your Booking?</h2><p>Not sure which hairstyle to choose? Have questions about our prices or services? Contact us directly. We will be happy to assist you.</p>
+<div class="btns"><a class="btn wa" href="https://wa.me/27721810706" target="_blank" rel="noopener">WhatsApp Us</a><a class="btn" href="tel:0721810706">Call Us</a></div></div></section>
+
+</main>
+<footer><div class="wrap"><div class="fcols"><div><h3>GC Hair Salon</h3><p>Look Good. Feel Good. Be Good.</p></div><div><h3>Quick Links</h3><ul><li><a href="home.html">Home</a></li><li><a href="services-prices.html">Services &amp; Prices</a></li><li><a href="book.html">Book Now</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="contact.html">Contact Us</a></li></ul></div><div><h3>Location</h3><p>Mzinti Osikah,<br>Opposite Tswelopele</p></div><div><h3>Contact</h3><p><a href="tel:0721810706">072 181 0706</a><br><a href="tel:0725774280">072 577 4280</a></p><div class="btns"><a class="btn wa sm" href="https://wa.me/27721810706" target="_blank" rel="noopener">WhatsApp</a><a class="btn sm" href="tel:0721810706">Call Us</a></div></div></div><p class="copy">© 2026 GC Hair Salon. All Rights Reserved.</p></div></footer>
+<script src="book.js"></script>
+</body>
+</html>
